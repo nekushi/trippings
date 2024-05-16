@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello, world!</title>
+    <style>
+        body > * {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number" id="first" />
+    <div>+</div>
+    <input type="number" id="second" />
+    <br />
+    <button>=</button>
+    <p id="ans"></p>
+</body>
+<script>
+
+    const firstInput = document.querySelector("#first")
+    const secondInput = document.querySelector("#second")
+    const btnEqual = document.querySelector("button")
+    const ans = document.querySelector("#ans")
+
+    btnEqual.onclick = function() {
+        ans.textContent = "Hello World";
+    }
+
+</script>
+</html>
